@@ -9,12 +9,18 @@ import './App.css'
 /**
  * by jkkim 2023.11.16 함수형 컴포넌트 ,클래스형 컴포넌트 비교테스트하려고 추가함.
  */
-import { FunctionalComponent } from './study/FunctionalComponent'
-import { ClassComponent } from './study/ClassComponent'
-import { List } from './study/RerenderComponent'
-import A from './study/RerenderingScenario'
-import RenderingMemo from './study/RerenderingMemo'
+/* import { FunctionalComponent } from './study/react/FunctionalComponent'
+import { ClassComponent } from './study/react/ClassComponent'
+import { List } from './study/react/RerenderComponent'
+import A from './study/react/RerenderingScenario'
+import RenderingMemo from './study/react/RerenderingMemo'
+import Hook from './study/react/react-hook/useState'
+import UseEffectComponent from './study/react/react-hook/useEffect'
+import UseMemoComponent from './study/react/react-hook/useMemo' */
 
+/* import MemoComponent from './study/react/react-hook/memo' */
+/* import UseCallbackComponent from './study/react/react-hook/useCallback' */
+import UseRefComponent from './study/react/react-hook/useRef'
 
 
 
@@ -49,8 +55,8 @@ function App() {
 
 
       {/* 함수형 컴포넌트 추가 */}
-      <FunctionalComponent user={'jkkim'}></FunctionalComponent>
-      <ClassComponent user={'쩐쩐쩐'}></ClassComponent>
+      {/* <FunctionalComponent user={'jkkim'}></FunctionalComponent> */}
+      {/* <ClassComponent user={'쩐쩐쩐'}></ClassComponent> */}
 
 {/* 
       <ul>
@@ -62,10 +68,34 @@ function App() {
       {/* <List arr={arr}>dkd</List> */}
 
 
-      <A></A>
+      {/* <A></A> */}
 
-      <RenderingMemo></RenderingMemo>
+    
+      {/* <Hook></Hook> */}
+      {/* <UseEffectComponent user = {'jkkim'}></UseEffectComponent> */}
+      {/* <UseMemoComponent user= {'kkkkkkkkk'}></UseMemoComponent> */}
+
+
+
+
+      {/* ------------- React.memo ------------------ */}
+      {/* <RenderingMemo></RenderingMemo> */}
+      {/* <MemoComponent ></MemoComponent> */}
       
+
+
+
+
+      {/* ------------- useCallback 훅 테스트 ------------------ */}
+      {/* <UseCallbackComponent></UseCallbackComponent> */}
+
+
+
+      {/* ------------- useRef 훅 테스트 ------------------ */}
+      <UseRefComponent></UseRefComponent>
+
+
+
     </>
   )
 }

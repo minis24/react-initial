@@ -2,8 +2,15 @@ import {useState, useEffect, useMemo} from 'react';
 
 
 function useMath (number:number){
+
+    
     const [double,setDouble] = useState (0);
     const [tripple, setTripple] = useState(0);
+
+    //렌더링 되는지 확인용도로 작성함.
+    useEffect(()=>{ 
+        console.log('useMath ----------------- number :: ',number)
+    });
 
     useEffect(()=>{
         setDouble(number * 2);
@@ -11,15 +18,22 @@ function useMath (number:number){
     },[number]);
 
 
-    return useMemo(() => { 
-        return { double, tripple } 
-    },[double,tripple]) ;
+    return useMemo(
+        () => { 
+            console.log('useMath return')
+            return { double, tripple } 
+        }
+    ,[double,tripple]) ;
 }
 
 
+
+
+
 export default function RenderingMemo (){
+    console.log('RenderingMemo --------------------------')
     const [counter,setCounter] = useState(0);
-    const value = useMath(10);
+    const value = useMath(20);
 
     useEffect(()=>{
         console.log(value.double , value.tripple);
