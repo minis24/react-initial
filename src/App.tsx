@@ -21,6 +21,8 @@ import UseMemoComponent from './study/react/react-hook/useMemo' */
 /* import MemoComponent from './study/react/react-hook/memo' */
 /* import UseCallbackComponent from './study/react/react-hook/useCallback' */
 import UseRefComponent from './study/react/react-hook/useRef'
+import UseContextParentComponent from './study/react/react-hook/useContext'
+import UseReducerComponent from './study/react/react-hook/useReducer'
 
 
 
@@ -92,7 +94,16 @@ function App() {
 
 
       {/* ------------- useRef 훅 테스트 ------------------ */}
-      <UseRefComponent></UseRefComponent>
+      {/* <UseRefComponent></UseRefComponent> */}
+
+
+
+      {/* ------------- useContext 훅 테스트 ------------------ */}
+      {/* <UseContextParentComponent></UseContextParentComponent> */}
+
+
+      {/* ------------- useReducer 훅 테스트 ------------------ */}
+      <UseReducerComponent></UseReducerComponent>
 
 
 
