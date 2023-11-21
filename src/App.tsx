@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import UseDebugValueComponent from './study/react/react-hook/useDebugValue';
 
 
 
@@ -20,9 +21,11 @@ import UseMemoComponent from './study/react/react-hook/useMemo' */
 
 /* import MemoComponent from './study/react/react-hook/memo' */
 /* import UseCallbackComponent from './study/react/react-hook/useCallback' */
-import UseRefComponent from './study/react/react-hook/useRef'
-import UseContextParentComponent from './study/react/react-hook/useContext'
-import UseReducerComponent from './study/react/react-hook/useReducer'
+/* import UseRefComponent from './study/react/react-hook/useRef' */
+/* import UseContextParentComponent from './study/react/react-hook/useContext' */
+/* import UseReducerComponent from './study/react/react-hook/useReducer' */
+/* import ParentComponent from './study/react/react-hook/forwardRef' */
+/* import UseImperativeHandleComponent from './study/react/react-hook/useImperativeHandler' */
 
 
 
@@ -103,10 +106,21 @@ function App() {
 
 
       {/* ------------- useReducer 훅 테스트 ------------------ */}
-      <UseReducerComponent></UseReducerComponent>
+      {/* <UseReducerComponent></UseReducerComponent> */}
 
 
 
+      {/* ------------- forwardRef 훅 테스트 ------------------ */}
+      {/* <ParentComponent></ParentComponent> */}
+
+
+      {/* ------------- useImperativeHandle 훅 테스트 ------------------ */}
+      {/* <UseImperativeHandleComponent></UseImperativeHandleComponent> */}
+
+
+
+      {/* ------------- useDebugValue 훅 테스트 ------------------ */}
+      <UseDebugValueComponent></UseDebugValueComponent>
     </>
   )
 }
