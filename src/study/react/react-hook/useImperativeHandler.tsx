@@ -22,9 +22,10 @@ const Input = forwardRef((props,ref)=>{
     // ==> 단순히 HTMLElement 뿐만 아니라, 자식컴포넌트에서 새롭게 설정한 객체의 키와 같에 대해서도 접근할 수 있게 되었다.
     // ==> !!!! 이 ref의 값에 원하는 값이나 액션을 정의할 수 있다.!!!!
 
-    useImperativeHandle(
-        ref,
-        ()=>({ alert: () => alert(props.value),}),
+    useImperativeHandle( ref,()=>(
+        { 
+            alert: () => alert(props.value),
+        }),
         //useEffect의 deps와 같다.
         [props.value],
     )

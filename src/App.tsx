@@ -25,7 +25,7 @@ import UseMemoComponent from './study/react/react-hook/useMemo' */
 /* import UseContextParentComponent from './study/react/react-hook/useContext' */
 /* import UseReducerComponent from './study/react/react-hook/useReducer' */
 /* import ParentComponent from './study/react/react-hook/forwardRef' */
-/* import UseImperativeHandleComponent from './study/react/react-hook/useImperativeHandler' */
+import UseImperativeHandleComponent from './study/react/react-hook/useImperativeHandler'
 
 
 
@@ -115,7 +115,7 @@ function App() {
 
 
       {/* ------------- useImperativeHandle 훅 테스트 ------------------ */}
-      {/* <UseImperativeHandleComponent></UseImperativeHandleComponent> */}
+      <UseImperativeHandleComponent></UseImperativeHandleComponent>
 
 
 
