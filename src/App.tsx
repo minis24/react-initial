@@ -26,6 +26,9 @@ import UseMemoComponent from './study/react/react-hook/useMemo' */
 /* import UseReducerComponent from './study/react/react-hook/useReducer' */
 /* import ParentComponent from './study/react/react-hook/forwardRef' */
 import UseImperativeHandleComponent from './study/react/react-hook/useImperativeHandler'
+import UseFetchTestComponent from './study/react/사용자정의훅/useFetchTestComponent';
+import TestComponent from './study/react/고차함수/high-2-Component';
+
 
 
 
@@ -115,12 +118,25 @@ function App() {
 
 
       {/* ------------- useImperativeHandle 훅 테스트 ------------------ */}
-      <UseImperativeHandleComponent></UseImperativeHandleComponent>
+      {/* <UseImperativeHandleComponent></UseImperativeHandleComponent> */}
 
 
 
       {/* ------------- useDebugValue 훅 테스트 ------------------ */}
-      <UseDebugValueComponent></UseDebugValueComponent>
+      {/* <UseDebugValueComponent></UseDebugValueComponent> */}
+
+
+      {/*------------------------------------------------------*/}
+      {/* 사용자 정의 훅 테스트 컴포넌트 (useFetch실행)*/}
+      {/*------------------------------------------------------*/}
+      {/* <UseFetchTestComponent></UseFetchTestComponent> */}
+
+
+
+      {/*------------------------------------------------------*/}
+      {/* 고차함수 테스트 컴포넌트*/}
+      {/*------------------------------------------------------*/}
+      <TestComponent></TestComponent>
     </>
   )
 }
