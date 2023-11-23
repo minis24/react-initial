@@ -129,14 +129,14 @@ function App() {
       {/*------------------------------------------------------*/}
       {/* 사용자 정의 훅 테스트 컴포넌트 (useFetch실행)*/}
       {/*------------------------------------------------------*/}
-      {/* <UseFetchTestComponent></UseFetchTestComponent> */}
+      <UseFetchTestComponent></UseFetchTestComponent>
 
 
 
       {/*------------------------------------------------------*/}
       {/* 고차함수 테스트 컴포넌트*/}
       {/*------------------------------------------------------*/}
-      <TestComponent></TestComponent>
+      {/* <TestComponent></TestComponent> */}
     </>
   )
 }
